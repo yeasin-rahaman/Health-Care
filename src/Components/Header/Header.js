@@ -1,0 +1,44 @@
+import React from 'react';
+import { Badge, Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import logo from './../../assets/images/logo.png'
+import { NavLink } from 'react-router-dom';
+import UseAuth from '../../hooks/UseAuth';
+
+const Header = () => {
+
+    const { user, logOut } = UseAuth();
+    const { displayName, photoURL, Email } = user;
+    return (
+        <div>
+            <Navbar bg="light" expand="lg">
+                <Container>
+                    <Nav.Link as={NavLink} to="/home"><Navbar.Brand href="#home"> <img src={logo} alt="" /></Navbar.Brand></Nav.Link>
+
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="ms-auto align-items-center">
+                            <Nav.Link as={NavLink} to="/home">Home</Nav.Link>
+
+                            <Nav.Link as={NavLink} to="/about">About</Nav.Link>
+
+                            <Nav.Link as={NavLink} to="/services">Services</Nav.Link>
+
+                            <Nav.Link as={NavLink} to="/contact">Contact</Nav.Link>
+
+
+                            {!displayName ? (<><Nav.Link as={NavLink} to="/signup">Sign Up</Nav.Link>
+
+                                <Nav.Link as={NavLink} to="/login">Log in</Nav.Link></>) : (
+                                <>         <Nav.Link className='text-danger' ><h4>{displayName}</h4></Nav.Link>
+                                    <button className='btn btn-primary' onClick={logOut}> log out</button></>
+                            )}
+
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
+        </div >
+    );
+};
+
+export default Header;
