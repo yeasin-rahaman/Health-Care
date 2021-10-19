@@ -17,7 +17,7 @@ const Patient = () => {
             </div>
 
 
-            <div class="card  my-5 h-50 text-center my-auto mt-5 " >
+            <div class="card  my-5 h-50 text-center my-auto mt-5 mb-5" >
                 <img src={patientImg} class="card-img  patient-img" alt="..." />
                 <div class="card-img-overlay container custom-card ">
                     <h5 class="card-title">Who has best doctors in the world?</h5>

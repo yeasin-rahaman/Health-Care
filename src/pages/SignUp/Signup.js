@@ -26,7 +26,7 @@ const Signup = () => {
                                 <InputGroup.Text>
                                     <FontAwesomeIcon icon={faUser}></FontAwesomeIcon>
                                 </InputGroup.Text>
-                                <FormControl required onBlur={getName} type="text" autoComplete="current-email" id="email" placeholder="Enter your email address"
+                                <FormControl required onBlur={getName} type="text" autoComplete="current-email" id="email" placeholder="Enter your Name"
                                 />
                             </InputGroup>
                         </Col>
