@@ -6,12 +6,16 @@
 <h3>This Website is made with react, bootstrap, and some css and Jason, Firebase</h3>
 
 
-<h5>This website is for Hospital Services</h5>
+<h2>This website is for Hospital Services</h2>
+<br>
+<h2>Functionality</h2>
 <ul> 
-<li>Health services</li>
-<li>Online doctor appointment </li>
-<li>Doctors profile</li>
-<li>Doctors profile</li>
-<li>Health Update</li>
+<li>This Site has Firebase Authentication</li>
+<li>React based website</li>
+<li>React React private route</li>
+<li>React Bootstrap</li>
+<li>Custom CSS</li>
+<li>Javascript function</li>
+
 </ul>
 
