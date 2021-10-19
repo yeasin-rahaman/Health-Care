@@ -15,53 +15,55 @@ const Signup = () => {
             <h2>Please Sign Up</h2>
             <p className=" mt-2">Signup with Email & Password</p>
             <p className="text-danger text-center">{error}</p>
-            <div className="w-25 mx-auto">
-                <div >
-                    <Row>
-                        <Col className="text-start">
-                            <Form.Label htmlFor="email" visuallyHidden>
-                                Your User Name
-                            </Form.Label>
-                            <InputGroup className="mb-2">
-                                <InputGroup.Text>
-                                    <FontAwesomeIcon icon={faUser}></FontAwesomeIcon>
-                                </InputGroup.Text>
-                                <FormControl required onBlur={getName} type="text" autoComplete="current-email" id="email" placeholder="Enter your Name"
-                                />
-                            </InputGroup>
-                        </Col>
-                    </Row>
-                    <Row>
+            <div className="row">
+                <div className="col-md-3 col-10 mx-auto">
+                    <div >
+                        <Row>
+                            <Col className="text-start">
+                                <Form.Label htmlFor="email" visuallyHidden>
+                                    Your User Name
+                                </Form.Label>
+                                <InputGroup className="mb-2">
+                                    <InputGroup.Text>
+                                        <FontAwesomeIcon icon={faUser}></FontAwesomeIcon>
+                                    </InputGroup.Text>
+                                    <FormControl required onBlur={getName} type="text" autoComplete="current-email" id="email" placeholder="Enter your Name"
+                                    />
+                                </InputGroup>
+                            </Col>
+                        </Row>
+                        <Row>
 
-                        <Col className="text-start">
-                            <Form.Label htmlFor="email" visuallyHidden>
-                                Your Email Address
-                            </Form.Label>
-                            <InputGroup className="mb-2">
-                                <InputGroup.Text>
-                                    <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
-                                </InputGroup.Text>
-                                <FormControl required onBlur={getEmail} type="email" autoComplete="current-email" id="email" placeholder="Enter your email address"
-                                />
-                            </InputGroup>
-                        </Col>
-                    </Row>
-                    <Row className="mt-2">
-                        <Col className="text-start">
-                            <Form.Label htmlFor="password" visuallyHidden>
-                                Your Password
-                            </Form.Label>
-                            <InputGroup className="mb-2">
-                                <InputGroup.Text>
-                                    <FontAwesomeIcon icon={faLock}></FontAwesomeIcon>
-                                </InputGroup.Text>
-                                <FormControl required onBlur={getPassword} type="password" autoComplete="current-password" id="password" placeholder="Enter your password" />
-                            </InputGroup>
-                        </Col>
-                    </Row>
-                    <button onClick={signUp} className="btn mt-2 btn-grad  w-100">
-                        Login
-                    </button>
+                            <Col className="text-start">
+                                <Form.Label htmlFor="email" visuallyHidden>
+                                    Your Email Address
+                                </Form.Label>
+                                <InputGroup className="mb-2">
+                                    <InputGroup.Text>
+                                        <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
+                                    </InputGroup.Text>
+                                    <FormControl required onBlur={getEmail} type="email" autoComplete="current-email" id="email" placeholder="Enter your email address"
+                                    />
+                                </InputGroup>
+                            </Col>
+                        </Row>
+                        <Row className="mt-2">
+                            <Col className="text-start">
+                                <Form.Label htmlFor="password" visuallyHidden>
+                                    Your Password
+                                </Form.Label>
+                                <InputGroup className="mb-2">
+                                    <InputGroup.Text>
+                                        <FontAwesomeIcon icon={faLock}></FontAwesomeIcon>
+                                    </InputGroup.Text>
+                                    <FormControl required onBlur={getPassword} type="password" autoComplete="current-password" id="password" placeholder="Enter your password" />
+                                </InputGroup>
+                            </Col>
+                        </Row>
+                        <button onClick={signUp} className="btn mt-2 btn-grad  w-100">
+                            Login
+                        </button>
+                    </div>
                 </div>
             </div>
             <p className="mt-2">
