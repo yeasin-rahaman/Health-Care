@@ -14,14 +14,6 @@ const UseFirebase = () => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
 
-    // clean error 
-    useEffect(() => {
-        setTimeout(() => {
-            setError('');
-        }, 5000);
-    }, [error])
-
-
     // google sign in 
     const signInWithGoogle = () => {
         signInWithPopup(auth, googleProvider)

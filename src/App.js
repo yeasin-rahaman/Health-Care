@@ -11,6 +11,8 @@ import PageNotFound from './pages/PageNotFound/PageNotFound';
 import Home from './pages/Home/Home/Home';
 import Details from './pages/Details/Details';
 import Services from './pages/Services/Services';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
+import Footer from './Components/Footer/Footer';
 
 
 function App() {
@@ -38,9 +40,9 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
-            <Route exact path="/services">
+            <PrivateRoute exact path="/services">
               <Services></Services>
-            </Route>
+            </PrivateRoute>
             <Route path="/services/:id">
               <Details></Details>
             </Route>
@@ -49,6 +51,7 @@ function App() {
             </Route>
           </Switch>
         </Router>
+        <Footer></Footer>
       </AuthProvider>
     </div>
   );

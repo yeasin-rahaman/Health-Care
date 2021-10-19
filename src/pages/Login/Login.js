@@ -6,6 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons'
 import google from './../../assets/images/google.png'
 import github from './../../assets/images/github.png'
+import './Login.css'
+
 
 const Login = () => {
     const { allContexts } = UseAuth()
