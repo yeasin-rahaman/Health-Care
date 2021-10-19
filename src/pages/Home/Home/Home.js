@@ -3,10 +3,12 @@ import Banner from '../Banner/Banner';
 
 
 
+
 const Home = () => {
     return (
         <div id="home">
             <Banner></Banner>
+
         </div>
     );
 };

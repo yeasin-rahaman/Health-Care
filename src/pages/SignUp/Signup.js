@@ -8,7 +8,8 @@ import google from './../../assets/images/google.png'
 import github from './../../assets/images/github.png'
 
 const Signup = () => {
-    const { signUp, getEmail, getPassword, getName, error, signInWithGoogle, signInWithGitHub } = UseAuth();
+    const { allContexts } = UseAuth();
+    const { signUp, getEmail, getPassword, getName, error, signInWithGoogle, signInWithGitHub } = allContexts;
     return (
         <div className="text-center my-4">
             <h2>Please Sign Up</h2>

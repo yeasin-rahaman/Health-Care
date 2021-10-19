@@ -1,13 +1,13 @@
 import React from 'react';
-import { Badge, Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Container, Nav, Navbar, } from 'react-bootstrap';
 import logo from './../../assets/images/logo.png'
 import { NavLink } from 'react-router-dom';
 import UseAuth from '../../hooks/UseAuth';
 
 const Header = () => {
-
-    const { user, logOut } = UseAuth();
-    const { displayName, photoURL, Email } = user;
+    const { allContexts, } = UseAuth()
+    const { user, logOut } = allContexts
+    const { displayName, } = user;
     return (
         <div>
             <Navbar bg="light" expand="lg">

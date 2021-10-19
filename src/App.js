@@ -8,8 +8,9 @@ import ContactUs from './pages/ContactUS/ContactUs';
 import Signup from './pages/SignUp/Signup';
 import Login from './pages/Login/Login';
 import PageNotFound from './pages/PageNotFound/PageNotFound';
-import Services from './pages/Services/Services';
 import Home from './pages/Home/Home/Home';
+import Details from './pages/Details/Details';
+import Services from './pages/Services/Services';
 
 
 function App() {
@@ -37,8 +38,11 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
-            <Route path="/services">
+            <Route exact path="/services">
               <Services></Services>
+            </Route>
+            <Route path="/services/:id">
+              <Details></Details>
             </Route>
             <Route path="*">
               <PageNotFound></PageNotFound>

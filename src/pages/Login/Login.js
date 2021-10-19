@@ -8,7 +8,8 @@ import google from './../../assets/images/google.png'
 import github from './../../assets/images/github.png'
 
 const Login = () => {
-    const { signInWithGoogle, signInWithGitHub, signInWithEmail, error, getPassword, getEmail } = UseAuth();
+    const { allContexts } = UseAuth()
+    const { signInWithGoogle, signInWithGitHub, signInWithEmail, error, getPassword, getEmail } = allContexts;
 
     return (
 
