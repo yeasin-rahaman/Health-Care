@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import UseAuth from '../../../hooks/UseAuth';
 
 const HomeServices = () => {
@@ -16,6 +17,9 @@ const HomeServices = () => {
                             <div className="card-body">
                                 <h5 className="card-title">{service.title}</h5>
                                 <p className="card-text">{service.desc}</p>
+                            </div>
+                            <div className="card-footer  text-center">
+                                <NavLink to="/services" className="btn-grad">View Details</NavLink>
                             </div>
 
                         </div>

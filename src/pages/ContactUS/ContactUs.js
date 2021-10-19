@@ -4,8 +4,8 @@ import map from './../../assets/images/map.jpg'
 const ContactUs = () => {
     return (
         <div>
-            <section id="contact">
-                <div class="container">
+            <section id="contact ">
+                <div class="container custom-body  mt-5">
                     <div class="well well-sm">
                         <h3><strong>Contact Us</strong></h3>
                     </div>
@@ -33,7 +33,7 @@ const ContactUs = () => {
                                     <textarea class="form-control" name="" rows="3" placeholder="Message"></textarea>
                                 </div>
                                 <div class="form-group p-2">
-                                    <button class="btn btn-default" type="submit" name="button">
+                                    <button class="btn btn-default btn-grad" type="submit" name="button">
                                         <i class="fa fa-paper-plane-o" aria-hidden="true"></i> Submit
                                     </button>
                                 </div>

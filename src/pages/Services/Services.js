@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import UseAuth from '../../hooks/UseAuth';
 import servicesImg from './../../assets/images/services.jpg'
+import './Services.css'
 
 
 
@@ -26,7 +27,7 @@ const Services = () => {
                                 <p className="card-text">{service.desc}</p>
                             </div>
                             <div className="card-footer  text-center">
-                                <NavLink to={`/services/${service.key}`} className="btn btn primary">View Details</NavLink>
+                                <NavLink to={`/services/${service.key}`} className="btn-grad">View Details</NavLink>
                             </div>
                         </div>
                     </div>)

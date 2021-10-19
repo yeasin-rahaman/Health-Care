@@ -3,7 +3,7 @@ import about from './../../assets/images/about.jpg'
 const About = () => {
     return (
         <div>
-            <div class="about-container">
+            <div class="about-container custom-body">
                 <div class="d-flex mt-5 justify-content-center">
                     <h1 class="edu">About Us </h1>
                 </div><section class="hero-banner py-5 mt-5">

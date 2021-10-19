@@ -11,7 +11,7 @@ const Signup = () => {
     const { allContexts } = UseAuth();
     const { signUp, getEmail, getPassword, getName, error, signInWithGoogle, signInWithGitHub } = allContexts;
     return (
-        <div className="text-center my-4">
+        <div className="text-center my-4 custom-body">
             <h2>Please Sign Up</h2>
             <p className=" mt-2">Signup with Email & Password</p>
             <p className="text-danger text-center">{error}</p>
@@ -59,14 +59,14 @@ const Signup = () => {
                             </InputGroup>
                         </Col>
                     </Row>
-                    <button onClick={signUp} className="btn btn-primary mt-2 w-100">
+                    <button onClick={signUp} className="btn mt-2 btn-grad  w-100">
                         Login
                     </button>
                 </div>
             </div>
             <p className="mt-2">
-                <NavLink className="text-decoration-none" to="/signup">
-                    Need an Account? Please Sign up!
+                <NavLink className="text-decoration-none" to="/login">
+                    Already have a account ? Please Login!
                 </NavLink>
             </p>
             <p className="mt-3">Or</p>

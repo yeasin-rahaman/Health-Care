@@ -5,7 +5,7 @@ const Doctor = () => {
     return (
         <div className="container">
             <div class="d-flex mt-5 justify-content-center "><h1>About Hospital</h1></div>
-            <div class="card mb-12" >
+            <div class="card mb-12 mt-5" >
                 <div class="row g-0">
                     <div class="col-md-4">
                         <img src={doctorImg} class="img-fluid rounded-start" alt="..." />

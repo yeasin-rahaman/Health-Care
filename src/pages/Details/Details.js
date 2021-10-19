@@ -7,7 +7,6 @@ const Details = () => {
     const { id } = useParams()
     const { services } = UseAuth()
     const serviceDetails = services?.find((service) => service.key === Number(id));
-    console.log(serviceDetails)
     const selected = serviceDetails?.title;
 
     return (

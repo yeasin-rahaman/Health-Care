@@ -16,7 +16,7 @@ const Login = () => {
     return (
 
 
-        <div className="text-center my-4">
+        <div className="text-center custom-body my-4">
             <h2>Please Login</h2>
             <p className=" mt-2">Login with Email & Password</p>
             <p className="text-danger text-center">{error}</p>
@@ -51,7 +51,7 @@ const Login = () => {
                         </Col>
                     </Row>
 
-                    <button type="" onClick={signInWithEmail} className="btn btn-primary mt-2 w-100">
+                    <button type="" onClick={signInWithEmail} className="btn btn-grad mt-2 w-100 btn-grad">
                         Login
                     </button>
                 </div>
