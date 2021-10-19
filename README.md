@@ -1,6 +1,6 @@
 <h1>Health care</h1>
 
-  <h2> Click to see  :  <a href="https://health-care-assignment-10.netlify.app/">Live Site</a></h2>
+  <h2> Click to see  :  <a target-blank href="https://health-care-assignment-10.netlify.app/">Live Site</a></h2>
   
 <hr>
 <h3>This Website is made with react, bootstrap, and some css and Jason, Firebase</h3>
@@ -18,4 +18,3 @@
 <li>Javascript function</li>
 
 </ul>
-
