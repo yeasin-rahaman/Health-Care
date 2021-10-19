@@ -1,0 +1,15 @@
+.patient-img{
+    opacity: .5;
+    max-height: 300px;
+    
+}
+
+.custom-card{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-footer.text-center {
+    background: none;
+    border-top: 0;
+}
