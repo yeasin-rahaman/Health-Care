@@ -11,7 +11,6 @@ const Home = () => {
             <Banner></Banner>
             <HomeServices></HomeServices>
             <Doctor></Doctor>
-
             <OurDoctors></OurDoctors>
             <Patient></Patient>
 

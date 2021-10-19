@@ -6,7 +6,7 @@ const HomeServices = () => {
     const { services } = UseAuth()
     const homeServices = services.slice(0, 3)
     return (
-        <div>
+        <div className="py-5">
             <div class="d-flex mt-5 justify-content-center "><h1>Services</h1></div>
             <h2>{services.desc}</h2>
             <div className="container text-black mt-5 mb-5" >

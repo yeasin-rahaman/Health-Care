@@ -3,7 +3,7 @@ import doctorImg from './../../../assets/images/doctor.jpg'
 
 const Doctor = () => {
     return (
-        <div className="container">
+        <div className="container py-5">
             <div class="d-flex mt-5 justify-content-center "><h1>About Hospital</h1></div>
             <div class="card mb-12 mt-5" >
                 <div class="row g-0">

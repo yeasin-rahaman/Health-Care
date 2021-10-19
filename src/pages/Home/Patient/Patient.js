@@ -4,7 +4,7 @@ import './Patint.css'
 
 const Patient = () => {
     return (
-        <div>
+        <div className="py-5">
             <div id="subscribe" class="container d-flex justify-content-center bg-panda-header align-items-center rounded-3 text-center">
                 <div>
                     <h1>LET'S STAY IN TOUCH</h1>

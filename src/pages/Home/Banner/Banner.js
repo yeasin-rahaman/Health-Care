@@ -7,7 +7,7 @@ import banner3 from './../../../assets/images/Banner/3.png';
 
 const Banner = () => {
     return (
-        <div className="banner">
+        <div className="banner pb-5">
             <>
                 <Carousel>
                     <Carousel.Item>
