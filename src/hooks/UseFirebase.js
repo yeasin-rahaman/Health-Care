@@ -14,6 +14,26 @@ const UseFirebase = () => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
 
+
+
+    // get email
+    const getName = (event) => {
+        setName(event?.target?.value)
+
+
+    }
+    // get name
+    const getEmail = (event) => {
+        setEmail(event?.target?.value)
+
+    }
+    // get password 
+    const getPassword = (event) => {
+        setPassword(event?.target?.value)
+
+    }
+
+
     // google sign in 
     const signInWithGoogle = () => {
         signInWithPopup(auth, googleProvider)
@@ -35,6 +55,7 @@ const UseFirebase = () => {
     }
     // Email  sign in 
     const signInWithEmail = (event) => {
+        console.log(email, password)
         event.preventDefault();
 
         signInWithEmailAndPassword(auth, email, password)
@@ -71,22 +92,6 @@ const UseFirebase = () => {
             setError(error.message)
         });
     }
-    // get email
-    const getName = (event) => {
-        setName(event?.target?.value)
-
-
-    }
-    // get name
-    const getEmail = (event) => {
-        setEmail(event?.target?.value)
-
-    }
-    // get password 
-    const getPassword = (event) => {
-        setPassword(event?.target?.value)
-
-    }
 
     // sign up with email
     const signUp = () => {
@@ -107,7 +112,6 @@ const UseFirebase = () => {
     const setNameAndImage = () => {
         updateProfile(auth.currentUser, {
             displayName: name,
-
         }).then(() => {
 
         }).catch((error => {

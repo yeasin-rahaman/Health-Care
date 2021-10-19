@@ -21,7 +21,8 @@ const Login = () => {
             <p className=" mt-2">Login with Email & Password</p>
             <p className="text-danger text-center">{error}</p>
             <div className="w-25 mx-auto">
-                <Form onSubmit={signInWithEmail}>
+                {/* <Form onSubmit={signInWithEmail}> */}
+                <div>
                     <Row>
                         <Col className="text-start">
                             <Form.Label htmlFor="email" visuallyHidden>
@@ -50,10 +51,11 @@ const Login = () => {
                         </Col>
                     </Row>
 
-                    <button type="submit" className="btn btn-primary mt-2 w-100">
+                    <button type="" onClick={signInWithEmail} className="btn btn-primary mt-2 w-100">
                         Login
                     </button>
-                </Form>
+                </div>
+                {/* </Form> */}
             </div>
             <p className="mt-2">
                 <NavLink className="text-decoration-none" to="/signup">
