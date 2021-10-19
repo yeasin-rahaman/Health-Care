@@ -16,7 +16,7 @@ const Login = () => {
     return (
 
 
-        <div className="text-center custom-body my-4">
+        <div className="text-center custom-body my-5">
             <h2>Please Login</h2>
             <p className=" mt-2">Login with Email & Password</p>
             <p className="text-danger text-center">{error}</p>
