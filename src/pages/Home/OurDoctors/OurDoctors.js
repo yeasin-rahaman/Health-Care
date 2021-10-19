@@ -6,7 +6,7 @@ import ourDoctor4 from './../../../assets/images/otrdoctor(4).jpg'
 
 const OurDoctors = () => {
     return (
-        <div className='container mt-5'>
+        <div className='container mt-5 mb-5'>
 
             <div class="row row-cols-1 row-cols-md-4 g-4">
                 <div class="col">

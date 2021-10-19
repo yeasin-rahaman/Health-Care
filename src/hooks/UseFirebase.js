@@ -55,7 +55,6 @@ const UseFirebase = () => {
     }
     // Email  sign in 
     const signInWithEmail = (event) => {
-        console.log(email, password)
         event.preventDefault();
 
         signInWithEmailAndPassword(auth, email, password)
@@ -93,20 +92,6 @@ const UseFirebase = () => {
         });
     }
 
-    // sign up with email
-    const signUp = () => {
-        console.log(email, password)
-        // setUser(email, password)
-        createUserWithEmailAndPassword(auth, email, password)
-
-            .then((result) => {
-
-                setNameAndImage()
-                alert("user been created")
-            }).catch(error => {
-                setError(error.message)
-            })
-    }
 
     // set use name
     const setNameAndImage = () => {
@@ -118,6 +103,22 @@ const UseFirebase = () => {
             setError(error.message)
         }))
     }
+
+    // sign up with email
+    const signUp = () => {
+        // setUser(email, password)
+        createUserWithEmailAndPassword(auth, email, password,)
+
+            .then((result) => {
+
+                setNameAndImage()
+                alert("user been created")
+            }).catch(error => {
+                setError(error.message)
+            })
+    }
+
+
 
     return {
         signInWithGoogle,
