@@ -10,7 +10,7 @@ const OurDoctors = () => {
             <div class="d-flex my-5 justify-content-center"><h1>Our Doctors</h1></div>
             <div class="row row-cols-1 row-cols-md-4 g-4">
                 <div class="col">
-                    <div class="card h-100">
+                    <div class="card h-100 hover">
                         <img src={ourDoctor1} class="card-img-top img-fluid" alt="..." />
                         <div class="card-body">
                             <h5 class="card-title">DR. BEATRICE PRIOR</h5>
@@ -20,7 +20,7 @@ const OurDoctors = () => {
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100">
+                    <div class="card h-100 hover">
                         <img src={ourDoctor2} class="card-img-top img-fluid" alt="..." />
                         <div class="card-body">
                             <h5 class="card-title">DR. EDWARD DUGHLAS</h5>
@@ -30,7 +30,7 @@ const OurDoctors = () => {
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100">
+                    <div class="card h-100 hover">
                         <img src={ourDoctor3} class="card-img-top img-fluid img-fluid" alt="..." />
                         <div class="card-body">
                             <h5 class="card-title">DR. PETER PARKER</h5>
@@ -40,7 +40,7 @@ const OurDoctors = () => {
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100">
+                    <div class="card h-100 hover">
                         <img src={ourDoctor4} class="card-img-top img-fluid img-fluid" alt="..." />
                         <div class="card-body">
                             <h5 class="card-title">DR. LIZA THOMAS</h5>
