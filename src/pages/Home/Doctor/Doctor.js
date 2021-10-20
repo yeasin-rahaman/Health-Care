@@ -10,7 +10,7 @@ const Doctor = () => {
                     <div class="col-md-4">
                         <img src={doctorImg} class="img-fluid rounded-start" alt="..." />
                     </div>
-                    <div class="col-md-8 d-flex align-items-center">
+                    <div class="col-md-8 d-flex align-items-center ">
                         <div class="card-body ">
                             <h5 class="card-title">About Our Hospital</h5>
                             <p class="card-text">Hospital, an institution that is built, staffed, and equipped for the diagnosis of disease; for the treatment, both medical and surgical, of the sick and the injured; and for their housing during this process. The modern hospital also often serves as a centre for investigation and for teaching.

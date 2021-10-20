@@ -1,19 +1,46 @@
 import React from 'react';
 import './ContactUs.css'
 import map from './../../assets/images/map.jpg'
+
+
+import { GoogleMap, LoadScript } from '@react-google-maps/api';
+
+const containerStyle = {
+    width: '600px',
+    height: '600px'
+};
+
+const center = {
+    lat: 23.7181758,
+    lng: 90.3866074
+};
+
+
+
+
 const ContactUs = () => {
     return (
         <div>
             <section id="contact ">
-                <div class="container custom-body  mt-5">
+                <div class="container custom-body align-items-center  mt-5">
                     <div class="well well-sm">
                         <h3><strong>Contact Us</strong></h3>
                     </div>
 
                     <div class="row mt-5">
                         <div class="col-md-7 d-flex align-items-center">
-                            <img src={map} alt="" width="100%" height="315" />
-
+                            <LoadScript
+                                googleMapsApiKey={process.env.REACT_APP_GOOGLE_API_KEY}
+                            >
+                                <GoogleMap
+                                    mapContainerStyle={containerStyle}
+                                    center={center}
+                                    zoom={10}
+                                >
+                                    { /* Child components, such as markers, info windows, etc. */}
+                                    <></>
+                                </GoogleMap>
+                            </LoadScript>
 
                         </div>
 
@@ -42,9 +69,10 @@ const ContactUs = () => {
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </section >
+        </div >
     );
 };
 
 export default ContactUs;
+
